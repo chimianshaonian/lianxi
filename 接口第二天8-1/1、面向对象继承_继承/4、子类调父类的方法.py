@@ -59,8 +59,6 @@ class Erzi(Fulei2,Fulei1):
         super().__init__()
         super().zhizuo()
 
-
-
 # 调用
 if __name__ == '__main__':
     xiaoming = Erzi()
@@ -71,13 +69,12 @@ if __name__ == '__main__':
     # <1> 子类调用父类方法1、指名道姓
     # 1、如此时需要制作五香的，没有办法，因为xiaoming现在是的属性是：五香
     # 2、如需要制作五香的，就需要用到子类调用父类的方法：1、指定道姓
-    # 3、需要在子类里调用无法的方法
+    # 3、需要在子类里调用五香的方法
     # 4、调用Wuxiang方法，此时xiaoming的属性为：五香
     # xiaoming.wuxiang()
-    # # 5、如再制作香辣的，也是同制作五香的发放一样，子类添加方法、新到父类Fulei2的属性
+    # # 5、如再制作香辣的，也是同制作五香的方法一样，子类添加方法、新调父类Fulei2的属性
     # xiaoming.xiangla()   # 此时xiaoming属性为：香辣
     # # 6、后续再想制作那种类型的，就直接调用方法即可
 
     # <2> 子类调用父类方法2、super（）函数
-    # 使用方式一
     xiaoming.two_super()   # 调用two_super方法后，xiaoming属性：香辣
